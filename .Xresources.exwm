@@ -1,0 +1,60 @@
+! ===== global resources
+!*background   : WhiteSmoke
+!*foreground   : black
+
+! ===== fonts
+Xft.autohint  : 0
+Xft.lcdfilter : lcddefault
+Xft.hintstyle : hintslight
+Xft.hinting   : 1
+Xft.antialias : 1
+Xft.rgba      : rgb
+
+! ===== xidle
+! drag pointer to lower left corner to lock screen
+XIdle*position : sw
+! and leave it there for one second.
+XIdle*delay    : 1
+! also lock screen after 5 minutes idle
+XIdle*timeout  : 300
+
+! ===== xlock
+! actually turn the backlight off
+XLock.dpmsoff     : 1
+! plain white-on-black lock screen
+XLock.description : off
+XLock.echokeys    : off
+XLock.info        :
+XLock.background  : black
+XLock.foreground  : white
+XLock.mode        : blank
+XLock.username    : username:
+XLock.password    : password:
+XLock.font        : -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-1
+XLock.planfont    : -misc-fixed-medium-r-normal-*-13-*-*-*-*-*-iso10646-1
+
+! ===== xclock
+! digital clock in lower right-hand corner
+XClock*analog      : false
+XClock*twentyfour  : true
+XClock*padding     : 0
+XClock*geometry    : -2-2
+XClock*render      : false
+XClock*font        : -misc-fixed-bold-r-normal-*-13-*-*-*-*-*-iso10646-1
+XClock*height      : 12
+XClock*background  : dimgray
+XClock*foreground  : white
+XClock*borderWidth : 0
+
+! ==== XTerm
+XTerm*faceName     : Source Code Pro, Source Code Pro Semibold
+XTerm*faceSize     : 11
+XTerm*vt100.scrollBar : false
+XTerm*on2Clicks    : word
+XTerm*on3Clicks    : line
+xterm*Background:               black
+xterm*Foreground:               WhiteSmoke
+!xterm*cursorColor:              LightBlue
+!xterm*pointerShape:             arrow
+!xterm*pointerColor:             blue
+XTerm*selectToClipboard: true

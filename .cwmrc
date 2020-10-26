@@ -1,0 +1,32 @@
+#fontname "source code pro:pixelsize=16"
+fontname "spleen:pixelsize=16"
+
+# Autogroup widgets
+autogroup 0 XClock
+autogroup 1 firefox
+autogroup 2 emacs
+autogroup 3 xconsole,XConsole
+
+# What does this do???
+sticky no
+
+# just window stuff
+borderwidth 1
+color activeborder "#FFBF00"
+color inactiveborder "#FFBF00"
+color selfont "#FFBF00"
+color font "#FFBF00"
+color menubg "#000000"
+color menufg "dark slate gray"
+color urgencyborder "#FFFFFF"
+color ungroupborder "#FFFFFF"
+gap 20 0 0 0
+
+ignore xconsole
+ignore termbar
+ignore bar
+
+command firefox "firefox"
+command emacs "emacs"
+
+snapdist 25
