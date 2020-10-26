@@ -1,0 +1,21 @@
+export LANG=en_US.UTF-8
+export ENV=$HOME/.kshrc
+
+lbfont=-misc-spleen-medium-r-normal--16-160-72-72-c-80-iso10646-1
+
+xsetroot -solid khaki
+
+xrdb -merge $HOME/.Xresources
+
+xidle &
+
+xset b off
+
+setxkbmap -variant intl -option ctrl:nocaps
+
+xrandr --output LVDS-1 --auto --output HDMI-1 --auto --left-of LVDS-1
+
+xset +fp /usr/local/share/fonts/spleen
+~/.local/bin/lemonbar.sh | lemonbar -f $lbfont &
+
+exec cwm

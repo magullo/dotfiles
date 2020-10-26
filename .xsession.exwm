@@ -1,0 +1,14 @@
+export LANG=en_US.UTF-8
+export ENV=$HOME/.kshrc
+
+xrdb -merge $HOME/.Xresources
+
+xidle &
+
+xset b off
+
+setxkbmap -variant intl -option ctrl:nocaps
+xmodmap -e 'keycode 131 = Super_L'
+xmodmap -e 'keycode 129 = Super_R'
+
+exec emacs
