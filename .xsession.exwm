@@ -11,4 +11,6 @@ setxkbmap -variant intl -option ctrl:nocaps
 xmodmap -e 'keycode 131 = Super_L'
 xmodmap -e 'keycode 129 = Super_R'
 
-exec emacs
+eval $(ssh-agent)
+
+dbus-launch --exit-with-session emacs
