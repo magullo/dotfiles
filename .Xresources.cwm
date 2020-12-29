@@ -1,4 +1,5 @@
 *faceName: spleen:pixelsize=16:antialias=false
+!*faceName: Terminus:pixelsize=14:antialias=false
 
 XTerm*Background: black
 XTerm*Foreground: #FFBF00
@@ -8,7 +9,7 @@ XTerm*HiForeColor: #FFBF00
 XTerm*HiBackColor: black
 XTerm*geometry: +50+90
 XTerm*cursorColor: #FFBF00
-!xterm*faceName: spleen:pixelsize=16:antialias=false
+!xterm*faceName: Spleen
 XTerm*selectToClipboard: true
 
 xclock*Foreground: #FFBF00
