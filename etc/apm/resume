@@ -1,0 +1,7 @@
+#!/bin/sh
+logger -t $0 "sleeping 3 seconds"
+sleep 3
+logger -t $0 "starting network"
+ifconfig trunk0 destroy
+sh /etc/netstart 
+logger -t $0 "script complete"

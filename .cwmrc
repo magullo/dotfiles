@@ -20,7 +20,7 @@ color menubg "#000000"
 color menufg "dark slate gray"
 color urgencyborder "#FFFFFF"
 color ungroupborder "#FFFFFF"
-gap 20 0 0 0
+gap 15 0 0 0
 
 ignore xconsole
 ignore termbar
