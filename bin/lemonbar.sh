@@ -2,6 +2,11 @@
 #
 # $Header$
 
+Memory() {
+	MEMORY=$(top -b1 | grep ^Memory | awk '{ print $3 }')
+	echo -n "Mem: $MEMORY"
+}
+
 Battery() {
 	ADAPTER=$(apm -a)
 	if [ $ADAPTER = 0 ] ; then
@@ -87,6 +92,6 @@ Wlan() {
 }
 
 while true ; do
-	echo "%{l}$(hostname -s) | $(Load)| $(Battery)| $(Cpu)%{r}$(Ifload)| $(Wlan)| $(Display)| $(Volume)| $(Clock)"
+	echo "%{l}$(hostname -s) | $(Load)| $(Battery)| $(Memory) | $(Cpu)%{r}$(Ifload)| $(Wlan)| $(Display)| $(Volume)| $(Clock)"
 	sleep 1
 done
