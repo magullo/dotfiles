@@ -1,8 +1,9 @@
 export LANG=en_US.UTF-8
 export ENV=$HOME/.kshrc
 
-#lbfont=-misc-spleen-medium-r-normal--16-160-72-72-c-80-iso10646-1
-lbfont=-misc-spleen-medium-r-normal--12-120-72-72-c-60-iso10646-1
+#lbfont=-misc-spleen-medium-r-normal--12-120-72-72-c-60-iso10646-1
+#lbfont=-b&h-luxi mono-bold-o-normal--0-0-0-0-m-0-iso8859-15
+#lbfont=-xos4-terminus-bold-r-normal--0-0-72-72-c-0-iso8859-16
 
 xsetroot -solid khaki
 
@@ -20,6 +21,7 @@ xset +fp /usr/local/share/fonts/spleen
 xset +fp /usr/local/share/fonts/terminus
 xset +fp /usr/local/share/fonts/adobe-source-code-pro
 
-~/.local/bin/lemonbar.sh | lemonbar -f $lbfont &
+#~/.local/bin/lemonbar.sh | lemonbar -f $lbfont &
+~/.local/bin/lemonbar.sh | lemonbar &
 
 exec cwm

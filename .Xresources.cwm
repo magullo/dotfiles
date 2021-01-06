@@ -21,4 +21,3 @@ xclock*update: 1
 xclock*geometry: +0+0
 
 xidle.timeout: 300
-
