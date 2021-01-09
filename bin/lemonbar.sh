@@ -50,7 +50,7 @@ Cpu() {
 }
 
 Ifload() {
-	set -A if_load $(ifstat -n -i trunk0 -b 0.1 1 | sed '1,2d')
+	set -A if_load $(ifstat -n -i urtwn0 -b 0.1 1 | sed '1,2d')
 	echo -n "In: %{F#BBBB00}${if_load[0]}%{F-} kb/s Out: %{F#0000BB}${if_load[1]}%{F-} kb/s "
 }
 
@@ -68,8 +68,8 @@ Display() {
 
 Volume() {
 	MUTE=$(sndioctl output.mute | awk -F '=' '{ print $2 }')
-	LSPK=$(sndioctl output.level | awk -F '=' '{ print $2 * 100 / 255 }')
-	RSPK=$(sndioctl output.level | awk -F '=' '{ print $2 * 100 / 255 }')
+	LSPK=$(sndioctl output.level | awk -F '=' '{ print $2 }')
+	RSPK=$(sndioctl output.level | awk -F '=' '{ print $2 }')
 	if [ "$MUTE" = "on" ] ; then
 		echo -n "%{F#FF0000}%{B#000000}"
 	else
