@@ -1,23 +1,21 @@
-*faceName: spleen:pixelsize=16:antialias=false
-!*faceName: Terminus:pixelsize=14:antialias=false
+*faceName: terminus-14
 
-XTerm*Background: black
-XTerm*Foreground: #FFBF00
-!XTerm*font: 9x15
-XTerm*saveLines: 1000
-XTerm*HiForeColor: #FFBF00
-XTerm*HiBackColor: black
-XTerm*geometry: +50+90
-XTerm*cursorColor: #FFBF00
-!xterm*faceName: Spleen
-XTerm*selectToClipboard: true
+xterm*Background: black
+xterm*Foreground: #FFBF00
+xterm*saveLines: 1000
+xterm*HiForeColor: #FFBF00
+xterm*HiBackColor: black
+xterm*geometry: +50+90
+xterm*cursorColor: #FFBF00
+xterm*selectToClipboard: true
 
 xclock*Foreground: #FFBF00
 xclock*Background: black
-xclock*Border: #FFBF00
 xclock*Highlight: FFBF00
-xclock*Hands: #FFBF00
 xclock*update: 1
 xclock*geometry: +0+0
+xclock*analog: 0
+xclock*padding: 0
+xclock*face: terminus-10
 
 xidle.timeout: 300

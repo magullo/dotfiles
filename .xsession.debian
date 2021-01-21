@@ -1,0 +1,19 @@
+export PATH=~/.local/bin:$PATH
+export LANG=en_US.UTF-8
+
+xsetroot -solid khaki
+
+xrdb -merge ~/.Xresources
+xset b off
+
+light-locker &
+
+setxkbmap -variant intl -option ctrl:nocaps
+
+xrandr --output LVDS-1 --auto --output HDMI-1 --auto --left-of LVDS-1
+
+xclock &
+
+~/.local/bin/lemonbar.sh | lemonbar &
+
+exec openbsd-cwm
